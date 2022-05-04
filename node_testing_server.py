@@ -6,9 +6,9 @@ from dotenv import dotenv_values
 import grpc
 import node_conn_pb2 as ReqResModule
 import node_conn_pb2_grpc as ClientServerModule
-from led_routines import rutina_secuencia1, rutina_secuencia2, rutina_secuencia3 
+# from led_routines import rutina_secuencia1, rutina_secuencia2, rutina_secuencia3 
 
-print(rutina_secuencia1)
+# print(rutina_secuencia1)
 
 venv_dict = dict(dotenv_values(".env"))
 
