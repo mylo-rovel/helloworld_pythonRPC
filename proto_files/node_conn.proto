@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service LedManipulationService {
+  rpc StartLedPerformance(TextMessage) returns (TextMessage) {}
+}
+
+message TextMessage {
+    string message = 1;
+}
+// node_conn
+// command to use
+
+// python3 -m grpc_tools.protoc -I //home/emilio/Documents/CapstoneC/pythonNode_gRPC/src/proto_files/ --python_out=/home/emilio/Documents/CapstoneC/pythonNode_gRPC/src/ --grpc_python_out=/home/emilio/Documents/CapstoneC/pythonNode_gRPC/src/ /home/emilio/Documents/CapstoneC/pythonNode_gRPC/src/proto_files/node_conn.proto
+
+
+// python3 -m grpc_tools.protoc --help
